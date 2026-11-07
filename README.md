@@ -84,6 +84,15 @@ La primera versión incluye:
 - [x] Pantalla de resultados.
 - [x] Datos simulados para representar a los participantes.
 
-## 🚀 Próximas funcionalidades
+## 🛠️ Tecnologías
 
-Algunas mejoras plane
+Este proyecto es una aplicación web. Las tecnologías específicas pueden actualizarse conforme evolucione el proyecto.
+## 💡 Visión del proyecto
+
+Bingo Social busca transformar una actividad tradicional de integración en una experiencia digital diseñada para equipos que trabajan de manera remota.
+
+## La idea central es sencilla:
+
+No se trata solo de completar un tablero, sino de descubrir a las personas que forman parte del equipo.
+Desarrollado como un proyecto experimental para explorar nuevas formas de interacción e integración en equipos de trabajo virtuales.
+
