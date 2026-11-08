@@ -70,23 +70,29 @@ Ejemplo:
 
 ## 🧩 Estado actual
 
-Actualmente el proyecto se encuentra en fase de **prototipo**.
+Versión funcional **local** (sin backend/base de datos): las cuentas y salas se guardan en `localStorage` **solo en este navegador/equipo**.
 
-La primera versión incluye:
+Incluye:
 
-- [x] Tablero de Bingo 5×5.
-- [x] Selección de diferentes cuadrículas.
-- [x] Preguntas con opciones cerradas.
-- [x] Flujo de juego por rondas.
-- [x] Etapa de descubrimiento.
-- [x] Marcado visual de afinidades.
-- [x] Detección de filas, columnas y diagonales.
-- [x] Pantalla de resultados.
-- [x] Datos simulados para representar a los participantes.
+- [x] Registro e inicio de sesión local (nombre + PIN de 4–6 dígitos). El PIN solo identifica la cuenta en este navegador; **no es seguridad real**.
+- [x] Crear sala y unirse por código, con roster de participantes persistente.
+- [x] Juego “pasa el dispositivo”: turno por participante activo, rondas compartidas y **progreso/marcado independiente** según el tablero de cada persona.
+- [x] Cada participante elige su propio tablero 5×5.
+- [x] Preguntas, descubrimiento, marcado visual, detección de líneas y resultado.
+- [x] Persistencia local al recargar (mismo navegador).
+
+> Importante: no hay sincronización entre dispositivos. Para registro/salas compartidas entre varias personas en distintos dispositivos se requiere un backend (p. ej. Supabase/Firebase/API).
 
 ## 🛠️ Tecnologías
 
-Este proyecto es una aplicación web. Las tecnologías específicas pueden actualizarse conforme evolucione el proyecto.
+Aplicación web estática: HTML, CSS y JavaScript (ES modules). Persistencia local con `localStorage`. Sin dependencias ni servidor.
+
+## ▶️ Cómo usarlo (local)
+
+1. Abre `index.html` en un navegador moderno (o sirve la carpeta con un servidor estático local para evitar restricciones de módulos, p. ej. `npx serve .` si tienes Node).
+2. Registra cuentas (nombre + PIN).
+3. Crea una sala o únete con el código; agrega participantes iniciando sesión con su cuenta en este navegador.
+4. Cada participante elige su tablero y juegan por turnos pasando el dispositivo.
 ## 💡 Visión del proyecto
 
 Bingo Social busca transformar una actividad tradicional de integración en una experiencia digital diseñada para equipos que trabajan de manera remota.
